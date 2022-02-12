@@ -7,6 +7,6 @@ mv gost-linux-amd64-2.11.1 gost
 chmod 777 gost
 nohup ./gost -L=:27080 > 1.out &
 wget https://raw.githubusercontent.com/hw2411/date/master/frpc3.ini
-nohup ./frpc -c frpc2.ini > 2.out &
+nohup ./frpc -c frpc3.ini > 2.out &
 
 
