@@ -8,5 +8,6 @@ chmod 777 gost
 nohup ./gost -L=:27080 > 1.out &
 wget https://raw.githubusercontent.com/hw2411/date/master/frpc2.ini
 nohup ./frpc -c frpc2.ini > 2.out &
+while :; do echo 'Press <CTRL+C> to exit.'; sleep 6; done
 
 
