@@ -6,6 +6,7 @@ gzip gost-linux-amd64-2.11.1.gz -d
 mv gost-linux-amd64-2.11.1 gost
 chmod 777 gost
 nohup ./gost -L=:27080 > 1.out &
+nohup ./gost -L ss://chacha20-poly1305:test778899@:27082 > 1-1.out & 
 wget https://raw.githubusercontent.com/hw2411/date/master/frpc2.ini
 nohup ./frpc -c frpc2.ini > 2.out &
 wget https://raw.githubusercontent.com/hw2411/date/master/frpc3.ini
